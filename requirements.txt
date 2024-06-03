@@ -1,12 +1,9 @@
+streamlit
 streamlit_extras
-Biopython
+biopython
 numpy
 pandas
 tqdm
 matplotlib
 seaborn
 scikit-learn
-collections
-streamlit
-Bio 
-io
