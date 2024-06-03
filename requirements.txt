@@ -7,3 +7,4 @@ tqdm
 matplotlib
 seaborn
 scikit-learn
+requests
