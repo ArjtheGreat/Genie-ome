@@ -1,11 +1,16 @@
 import streamlit as st
+import os
 
 def create_header():
-    # Debugging: print the current working directory
-    st.write("Current working directory:", os.getcwd())
+    cwd = os.getcwd()
+    st.write("Current working directory:", cwd)
     
-    # Debugging: list files in the current directory
-    st.write("Files in current directory:", os.listdir(os.getcwd()))
+    # List files in the current working directory
+    st.write("Files in current directory:", os.listdir(cwd))
+    
+    # Get the absolute path to the image
+    image_path = os.path.join(cwd, 'Genie-ome.png')
+    st.write("Image path:", image_path)
 
     st.markdown("""
         <style>
