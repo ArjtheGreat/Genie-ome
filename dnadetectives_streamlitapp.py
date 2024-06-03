@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_extras.let_it_rain import rain
+# from streamlit_extras.let_it_rain import rain
 from model import lm, X_test, original_sequence
 from header import *
 from userinput import *
@@ -202,7 +202,7 @@ else:
     st.button('Back', on_click=show_upload)
     st.markdown("<div class='title'>Genie-ome Results</div>", unsafe_allow_html=True)
     st.markdown("<style>div.row-widget.stRadio > div{flex-direction:row;}</style>", unsafe_allow_html=True)
-    rain(emoji="🦠😷🧑‍🔬",font_size=35,falling_speed=1,animation_length=3,)
+    # rain(emoji="🦠😷🧑‍🔬",font_size=35,falling_speed=1,animation_length=3,)
     st.markdown('<div class="col-container">', unsafe_allow_html=True)
     col1, col2 = st.columns([1, 1], gap="large")
     with col1:
