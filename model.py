@@ -7,9 +7,23 @@ import seaborn as sns
 from sklearn.metrics import confusion_matrix
 from collections import Counter
 from sklearn import model_selection, linear_model
+import requests
 
 # data_path = 'https://drive.google.com/uc?id=1f1CtRwSohB7uaAypn8iA4oqdXlD_xXL1'
-!wget -q --show-progress 'https://storage.googleapis.com/inspirit-ai-data-bucket-1/Data/AI%20Scholars/Sessions%206%20-%2010%20(Projects)/Project%20-%20DNA%20Detectives/SARS_CoV_2_sequences_global.fasta'
+def download_file(url, output_path):
+    response = requests.get(url, stream=True)
+    with open(output_path, "wb") as file:
+        for chunk in response.iter_content(chunk_size=8192):
+            file.write(chunk)
+
+# URL of the file to download
+file_url = 'https://storage.googleapis.com/inspirit-ai-data-bucket-1/Data/AI%20Scholars/Sessions%206%20-%2010%20(Projects)/Project%20-%20DNA%20Detectives/SARS_CoV_2_sequences_global.fasta'
+
+# Output path where the file will be saved
+output_path = 'SARS_CoV_2_sequences_global.fasta'
+
+# Download the file
+download_file(file_url, output_path)
 cov2_sequences = 'SARS_CoV_2_sequences_global.fasta'
 
 sequences = [r for r in SeqIO.parse(cov2_sequences, 'fasta')]
