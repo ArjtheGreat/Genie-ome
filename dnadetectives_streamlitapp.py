@@ -1,16 +1,12 @@
 import streamlit as st
 from streamlit_extras.let_it_rain import rain
-from joblib import load
+from model import lm, X_test, original_sequence
 from header import *
 from userinput import *
 from response import *
 from predictor import *
 from genomicbreakdown import *
 
-# Load our DecisionTree model into our web app
-lm = load("lm_model.joblib")
-X_test = load('X_test.joblib')
-original_sequence = load('original_sequence.joblib')
 st.set_page_config(layout="wide")
 # Custom CSS for the entire app
 st.markdown(
