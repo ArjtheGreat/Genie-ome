@@ -1,4 +1,5 @@
 import streamlit as st
+!pip install streamlit_extras
 from streamlit_extras.let_it_rain import rain
 from model import lm, X_test, original_sequence
 from header import *
