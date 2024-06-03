@@ -1,4 +1,3 @@
-!pip install Biopython
 from Bio import SeqIO
 import numpy as np
 import pandas as pd
