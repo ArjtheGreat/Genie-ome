@@ -189,7 +189,7 @@ def show_upload():
 if st.session_state.show_upload:
     create_header()
     sequence = get_user_input()
-    st.image("/content/drive/My Drive/Inspirit AI Demonstration/COVID World Map.png", use_column_width=True)
+    st.image("COVID World Map.png", use_column_width=True)
     st.write("Credit: Bloomberg")
     if sequence is not None:
         input_features = create_dataframe(sequence, X_test.columns)
@@ -213,15 +213,15 @@ else:
         if prediction[0] == "Oceania":
             col_center = st.columns([1, 2, 1])[1]
             with col_center:
-                st.image("/content/drive/My Drive/Inspirit AI Demonstration/Oceania.png", use_column_width=True)
+                st.image("Oceania.png", use_column_width=True)
         elif prediction[0] == "Asia":
             col_center = st.columns([1, 2, 1])[1]
             with col_center:
-                st.image("/content/drive/My Drive/Inspirit AI Demonstration/Asia.png", use_column_width=True)
+                st.image("Asia.png", use_column_width=True)
         elif prediction[0] == "North America":
             col_center = st.columns([1, 2, 1])[1]
             with col_center:
-                st.image("/content/drive/My Drive/Inspirit AI Demonstration/North America.png", use_column_width=True)
+                st.image("North America.png", use_column_width=True)
 
 
     with col2:
