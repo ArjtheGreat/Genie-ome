@@ -32,7 +32,7 @@ n_bases_in_seq = len(sequences[0])
 columns = {}
 
 # Iterate though all positions in this sequence.
-for location in tqdm.tqdm(range(n_bases_in_seq)): # tqdm is a nice library that prints our progress.
+for location in range(n_bases_in_seq): # tqdm is a nice library that prints our progress.
   bases_at_location = np.array([s[location] for s in sequences])
   # If there are no mutations at this position, move on.
   if len(set(bases_at_location))==1: continue
