@@ -3,10 +3,6 @@ import os
 
 def create_header():
     cwd = os.getcwd()
-    st.write("Current working directory:", cwd)
-    
-    # List files in the current working directory
-    st.write("Files in current directory:", os.listdir(cwd))
     
     # Get the absolute path to the image
     image_path = os.path.join(cwd, 'Genie-ome.png')
