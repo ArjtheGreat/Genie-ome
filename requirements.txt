@@ -5,7 +5,7 @@ pandas
 tqdm
 matplotlib
 seaborn
-sklearn
+scikit-learn
 collections
 streamlit
 Bio 
