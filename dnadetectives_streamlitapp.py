@@ -1,11 +1,11 @@
 import streamlit as st
 # from streamlit_extras.let_it_rain import rain
-from model import lm, X_test, original_sequence
 from header import *
 from userinput import *
 from response import *
 from predictor import *
 from genomicbreakdown import *
+from model import lm, X_test, original_sequence
 
 st.set_page_config(layout="wide")
 # Custom CSS for the entire app
