@@ -1,4 +1,5 @@
 import streamlit as st
+!pip install streamlit_extras
 from streamlit_extras.let_it_rain import rain
 from joblib import load
 from header import *
