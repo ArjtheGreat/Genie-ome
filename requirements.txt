@@ -1,0 +1,12 @@
+streamlit_extras
+Biopython
+numpy
+pandas
+tqdm
+matplotlib
+seaborn
+sklearn
+collections
+import streamlit as st
+Bio 
+io
