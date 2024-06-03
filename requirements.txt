@@ -7,6 +7,6 @@ matplotlib
 seaborn
 sklearn
 collections
-import streamlit as st
+streamlit
 Bio 
 io
