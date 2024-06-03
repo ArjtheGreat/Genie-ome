@@ -6,7 +6,6 @@ def create_header():
     
     # Get the absolute path to the image
     image_path = os.path.join(cwd, 'Genie-ome.png')
-    st.write("Image path:", image_path)
 
     st.markdown("""
         <style>
