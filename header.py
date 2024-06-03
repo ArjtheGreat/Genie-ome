@@ -27,7 +27,7 @@ def create_header():
     """, unsafe_allow_html=True)
 
     st.markdown("<div class='header'>", unsafe_allow_html=True)
-    st.image("/content/drive/My Drive/Inspirit AI Demonstration/Genie-ome.png", width=180)
+    st.image("Genie-ome.png", width=180)
     st.markdown("</div>", unsafe_allow_html=True)
     st.markdown("<div class='title'>Genie-ome: A Genome Geolocator Model</div>", unsafe_allow_html=True)
     st.markdown("<div class='subtitle'>By Arjun, Daren, Sarina, Pooja</div>", unsafe_allow_html=True)
