@@ -39,7 +39,6 @@ for location in tqdm.tqdm(range(n_bases_in_seq)): # tqdm is a nice library that 
 
 
 mutation_df = pd.DataFrame(columns)
-global original_sequence
 original_sequence = mutation_df.iloc[0]
 
 country = "USA" #@param dict_keys(['China', 'Kazakhstan', 'India', 'Sri Lanka', 'Taiwan', 'Hong Kong', 'Viet Nam', 'Thailand', 'Nepal', 'Israel', 'South Korea', 'Iran', 'Pakistan', 'Turkey', 'Australia', 'USA']
@@ -96,8 +95,6 @@ else:
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
-global lm
-global X_test
 lm = linear_model.LogisticRegression(
     multi_class="multinomial", max_iter=1000,
     fit_intercept=False, tol=0.001, solver='saga', random_state=42)
