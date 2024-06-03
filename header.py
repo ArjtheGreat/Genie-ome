@@ -1,6 +1,12 @@
 import streamlit as st
 
 def create_header():
+    # Debugging: print the current working directory
+    st.write("Current working directory:", os.getcwd())
+    
+    # Debugging: list files in the current directory
+    st.write("Files in current directory:", os.listdir(os.getcwd()))
+
     st.markdown("""
         <style>
         .header {
