@@ -54,6 +54,7 @@ for location in range(n_bases_in_seq): # tqdm is a nice library that prints our 
 
 mutation_df = pd.DataFrame(columns)
 original_sequence = mutation_df.iloc[0]
+st.write(original_sequence)
 
 country = "USA" #@param dict_keys(['China', 'Kazakhstan', 'India', 'Sri Lanka', 'Taiwan', 'Hong Kong', 'Viet Nam', 'Thailand', 'Nepal', 'Israel', 'South Korea', 'Iran', 'Pakistan', 'Turkey', 'Australia', 'USA']
 countries = [(s.description).split('|')[-1] for s in sequences]
