@@ -8,7 +8,6 @@ from genomicbreakdown import *
 from model import lm, X_test, original_sequence
 
 st.set_page_config(layout="wide")
-st.write(original_sequence)
 # Custom CSS for the entire app
 st.markdown(
     """
@@ -229,5 +228,5 @@ else:
         col3, col4 = st.columns([1, 1])
         display_genomic_breakdown(st.session_state.sequence, original_sequence, col3, col4)
     st.markdown('</div>', unsafe_allow_html=True)
-
+st.write(original_sequence)
 
