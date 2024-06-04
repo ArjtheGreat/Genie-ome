@@ -8,6 +8,7 @@ from genomicbreakdown import *
 from model import lm, X_test, original_sequence
 
 st.set_page_config(layout="wide")
+st.write(original_sequence)
 # Custom CSS for the entire app
 st.markdown(
     """
