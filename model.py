@@ -8,7 +8,6 @@ from sklearn.metrics import confusion_matrix
 from collections import Counter
 from sklearn import model_selection, linear_model
 import requests
-import streamlit as st
 
 # data_path = 'https://drive.google.com/uc?id=1f1CtRwSohB7uaAypn8iA4oqdXlD_xXL1'
 def download_file(url, output_path):
