@@ -28,7 +28,6 @@ download_file(file_url, output_path)
 cov2_sequences = 'SARS_CoV_2_sequences_global.fasta'
 
 sequences = [r for r in SeqIO.parse(cov2_sequences, 'fasta')]
-
 n_bases_in_seq = len(sequences[0])
 columns = {}
 
@@ -54,7 +53,8 @@ for location in range(n_bases_in_seq): # tqdm is a nice library that prints our 
 
 
 mutation_df = pd.DataFrame(columns)
-original_sequence = mutation_df.iloc[0]
+global original_sequence
+original_sequence = np.array(sequences[0])
 
 country = "USA" #@param dict_keys(['China', 'Kazakhstan', 'India', 'Sri Lanka', 'Taiwan', 'Hong Kong', 'Viet Nam', 'Thailand', 'Nepal', 'Israel', 'South Korea', 'Iran', 'Pakistan', 'Turkey', 'Australia', 'USA']
 countries = [(s.description).split('|')[-1] for s in sequences]
