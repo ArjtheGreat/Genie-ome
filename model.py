@@ -53,7 +53,6 @@ for location in range(n_bases_in_seq): # tqdm is a nice library that prints our 
 
 
 mutation_df = pd.DataFrame(columns)
-global original_sequence
 original_sequence = np.array(sequences[0])
 
 country = "USA" #@param dict_keys(['China', 'Kazakhstan', 'India', 'Sri Lanka', 'Taiwan', 'Hong Kong', 'Viet Nam', 'Thailand', 'Nepal', 'Israel', 'South Korea', 'Iran', 'Pakistan', 'Turkey', 'Australia', 'USA']
