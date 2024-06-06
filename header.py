@@ -40,6 +40,6 @@ def create_header():
       st.image(image_path, width=180)
     with col2:
         st.markdown("<div class='title'>Genie-ome: A Genome Geolocator Model</div>", unsafe_allow_html=True)
-        st.markdown("<div class='subtitle'>By Arjun, Daren, Sarina, Pooja</div>", unsafe_allow_html=True)
+        st.markdown("<div class='subtitle'>By Arjun Maitra, Daren Zhong, Sarina Wang, Pooja Kallur</div>", unsafe_allow_html=True)
         st.markdown("<div class='subtitle'>Upload a .fasta file, let's predict which region of the world it comes from</div>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
