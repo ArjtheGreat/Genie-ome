@@ -1,3 +1,3 @@
 # Genie-ome
 
-visit @ [https://genieome.streamlit.app/](url)
+visit @ [Genie-ome](https://genieome.streamlit.app/)
